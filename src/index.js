@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SeasonDisplay from './SeasonDisplay';
+import "semantic-ui-css/semantic.min.css";
 /*
 const App = () => {
     window.navigator.geolocation.getCurrentPosition(
@@ -23,14 +25,14 @@ class App extends React.Component {
     }
 
     componentDidUpdate() {
-        console.log('Update');
+
     }
     
     render() {
         if(this.state.latitude && !this.state.errorMessage)
             return (
                 <div>
-                    Latitude: {this.state.latitude}
+                    <SeasonDisplay lat={this.state.latitude} />
                 </div>
             );
         else if(!this.state.latitude && this.state.errorMessage)
