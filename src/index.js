@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import Spinner from './Spinner'
 import "semantic-ui-css/semantic.min.css";
 /*
 const App = () => {
@@ -42,7 +43,7 @@ class App extends React.Component {
                 </div>
             );
     
-        return  <div>loading</div>;
+        return  <Spinner />;
     }
 }
 
